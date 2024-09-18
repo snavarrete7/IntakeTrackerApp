@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ModifyWeightHeightActivity">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="444dp"
+        android:orientation="vertical"
+        android:translationX="20sp"
+        android:translationY="30sp"
+        tools:context=".ui.ModifyWeightHeightActivity"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:hint="enter your current weight"
+            android:inputType="numberDecimal"
+            android:translationX="-3sp"
+            android:translationY="-7sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:textSize="18sp"
+            android:translationY="20sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <EditText
+            android:id="@+id/editTextAltura"
+            android:layout_width="211sp"
+            android:layout_height="wrap_content"
+            android:hint="enter your current height"
+            android:inputType="numberDecimal"
+            android:translationX="-3sp"
+            android:translationY="20sp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="373dp" />
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm changes"
+            android:textSize="14sp"
+            android:translationY="50sp"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="534dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FragmentProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="PROFILE"
+        android:textColor="@color/black"
+        android:textSize="48sp" />
+
+    <FrameLayout
+        android:id="@+id/overflow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        tools:context=".ui.FragmentProfile">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="574dp"
+        android:orientation="vertical"
+        android:translationX="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/overflow_layout"
+        app:layout_constraintVertical_bias="0.789"
+        tools:context=".ui.FragmentProfile"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <TextView
+            android:id="@+id/emailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:inputType="textEmailAddress"
+            android:text="email"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationY="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <TextView
+            android:id="@+id/passwordProfile"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:inputType="textPassword"
+            android:text="password"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationY="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <TextView
+            android:id="@+id/usernameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationY="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <TextView
+            android:id="@+id/weightProfile"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="weight"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationY="2sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="354dp" />
+
+        <TextView
+            android:id="@+id/heightProfile"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:text="height"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationY="2sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
